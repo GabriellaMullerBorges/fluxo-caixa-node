@@ -1,6 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+.titulo{
+  margin: 0;
+  padding: 0;
+
 }
 
 a {
@@ -8,7 +19,6 @@ a {
 }
 .dvCaixas {
   width: 100%;
-  background-color: orange;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -16,20 +26,25 @@ a {
 
 .dvCaixas div{
  width: fit-content;
- background-color: gray;
+ background-color:#F0F8FF;
  padding: 1rem;
+ border-radius: 10px;
+}
+.dvCaixas div:nth-child(2){
+  background-color: LightGreen;
+  border-radius: 10px;
 }
 
 .dvCaixas div:nth-child(3){
-  background-color: red;
+  background-color: tomato;
+  border-radius: 10px;
 }
 
 .dvSearch {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
-  background-color: pink;
+  padding: 1rem;
   justify-content: space-between;
 }
 
@@ -40,7 +55,6 @@ a {
 .dvInput form {
   display: flex;
   flex-direction: row;
-  background-color: purple;
 }
 
 .dvTabela { 
